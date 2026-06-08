@@ -1,22 +1,35 @@
+
 *{
-    background-color: aliceblue;
-    padding-left: 20px;
-    padding-right: 20px;
-    }
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:aliceblue;
+    padding:20px;
+}
+
 header{
-    font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
-    align-self:center;
-    padding-bottom: 20px;
-    min-height: 100px;
+    min-height:100px;
+    padding-bottom:20px;
+}
+
+.container{
+    display:flex;
+    gap:26px;
+    justify-content: space-around;
+    background-color:white;
+    padding:20px;
+    border-radius:15px;
+}
+.sidebar{
+    
 
 }
-.container{
-    display: flex;
-    background-color: whitesmoke;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 26px;
-    
+.main-content{
+
+}
+.task{
 
 }
