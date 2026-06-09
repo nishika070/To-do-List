@@ -147,13 +147,15 @@ header p {
     
     margin-left: 10px;
     margin-right:10px;
-    
+    border-color:#FAF8F5 ;
 }
 .setting {
     background-color:#c48888;
     color: #FFFFFF;
     padding: 5px;
     border-radius: 10px;
+    border-color:#FAF8F5 ;
+
 }
 
 .setting:hover {
@@ -165,6 +167,7 @@ header p {
     background-color: #c48888;
     color: #FFFFFF;
     padding: 5px;
+    border-color:#FAF8F5 ;
     border-radius: 10px;
 }
 .sign-out:hover {
@@ -283,6 +286,8 @@ header p {
 .save {
     background-color: #84bd76;
     color: #FFFFFF;
+    border-color:#FAF8F5 ;
+
     padding: 5px;
     border-radius: 10px;
 }
@@ -293,6 +298,7 @@ header p {
 }
 
 .delete {
+    border-color:#FAF8F5 ;
     background-color: #c48888;
     color: #FFFFFF;
     padding: 5px;
