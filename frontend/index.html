@@ -1,72 +1,102 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>To Do List</title>
+        <title>TO DO LIST</title>
         <link rel="stylesheet" href="style.css">
+
     </head>
     <body>
-        <header>
-            To Do List
-        </header>
-        <section class="container">
-
-
-        <!--===================LEFT -SIDEBAR=======================-->
-
-        <section class="sidebar">
-            <!--left panel-->
-            <h3>Menu</h3>
-            <input type="text" placeholder="Search">
-            <h4>Tasks</h4>
-            <ul>
-                <li>Upcoming</li>
-                <li>Today</li>
-                <li>Calendar</li>
-                <li>Sticky Wall</li>
-            </ul>
-            <h4>Lists</h4>
-                <li>Personal</li>
-                <li>Work</li>
-                <li>Study</li>
-            <h4>Tags</h4>
-                <li>Shopping</li>
-                <li>Cab</li>
-
-        </section> 
-
-
-
-        <!--===================MAIN-CONTENT=======================-->
-
-        <section class="main-content">
-            <!--center panel-->
-            <div class="Today">
-                <h3>Today</h3>
+        <header class="title">
+            <div class="with-logo">
+            <img src="/logo.png" alt="logo not found"/>
+            <div class="inner">
+            <h1>TO DO LIST</h1>
+            <p>Smarter way to success</p>
             </div>
+            </div>
+        </header>
+        <main class="container">
+
+            <!--=============side panel ====================-->
+
+
+            <section class="side-panel">
+                <h2>Menu</h2>
+                <input type="text" placeholder="Search">
+                <p class="label">Tasks</p>
+                <ul>
+                    
+                    <li>Upcoming</li>
+                    <li>Today</li>
+                    <li>Calendar</li>
+                    <li>Sticky Wall</li>
+                </ul>
+                <p class="label">Lists</p>
+                <ul>
+                    
+                    <li>Personal</li>
+                    <li>Work</li>
+                    <li>Study</li>
+                </ul>
+                <p class="label">Tags</p>
+                <ul>
+                    
+                    <li>Tag1</li>
+                    <li>Tag2</li>
+                    
+                </ul>
+                <div class="side-panel-buttons">
+                <button class="setting">Settings</button>
+                <button class="sign-out">Sign out </button>
+                </div>
+
+            </section>
+
+            <!--=============main-center ====================-->
+
             
-        </section>
+            <section class="main">
+                <h2>Today</h2>
+                <button>+Add New Task</button>
+                <!--have to figure out how to store the data and show on frontend-->
 
+            </section>
+            
 
+            <!--=============right task details ====================-->
 
-
-
-        <!--==================Task:=======================-->
-
-        <section class="task">
-            <!--right panel-->
-            <h2>task-title</h3>
-            <h4>task:</h4>
-            <input type="text" placeholder="Task - Title">
-            <textarea placeholder="Description"></textarea>
-            <label>Due Date</label>
-            <input type="date">
-            <label>Tags</label>
-            <input type=" text" placeholder="ex. cab expense">
-            <button>Delete Task</button>
-            <button>Save Changes</button>
-
-        </section>
+            
+            <section class="task-details">
+                <h2>Task:</h2>
+                
+                <div class="form-row">
+                    <input type="text" placeholder="Renew driver's license">
+                </div>
+                
+                <div class="form-row">
+                    <textarea placeholder="Description....."></textarea>
+                </div>
+                
+                <div class="form-row-inline">
+                    <label>Due Date</label>
+                    <input type="date">
+                </div>
+                
+                <div class="form-row-inline">
+                    <label>Tags</label>
+                    <input type="text" placeholder="Tag1">
+                </div>
+                
+                <h3 class="sub">Subtasks:</h3>
+                <div class="form-row subtask-row">
+                    <input type="text" placeholder="Add New Subtask">
+                    <!---<input type="checkbox">-->
+                </div>
+                <div class="action-buttons">
+                    <button class="save">Save Changes</button>
+                    <button class="delete">Delete task</button>
+                </div>
+                </section>
         </main>
-
     </body>
 </html>
