@@ -70,33 +70,34 @@
                 <h2>Task:</h2>
                 
                 <div class="form-row">
-                    <input type="text" placeholder="Renew driver's license">
+                    <input type="text" id="task-name" placeholder="Renew driver's license">
                 </div>
                 
                 <div class="form-row">
-                    <textarea placeholder="Description....."></textarea>
+                    <textarea id="task-desc" placeholder="Description....."></textarea>
                 </div>
                 
                 <div class="form-row-inline">
                     <label>Due Date</label>
-                    <input type="date">
+                    <input type="date" id="task-date">
                 </div>
                 
                 <div class="form-row-inline">
                     <label>Tags</label>
-                    <input type="text" placeholder="Tag1">
+                    <input type="text" placeholder="Tag1" id="task-tag">
                 </div>
                 
                 <h3 class="sub">Subtasks:</h3>
                 <div class="form-row subtask-row">
-                    <input type="text" placeholder="Add New Subtask">
+                    <input type="text" placeholder="Add New Subtask" id="task-subtask">
                     <!---<input type="checkbox">-->
                 </div>
                 <div class="action-buttons">
-                    <button class="save">Save Changes</button>
-                    <button class="delete">Delete task</button>
+                    <button class="save" id="savebtn">Save Changes</button>
+                    <button class="delete" id="deletebtn">Delete task</button>
                 </div>
                 </section>
         </main>
+        <script src="app.js"></script>
     </body>
 </html>
