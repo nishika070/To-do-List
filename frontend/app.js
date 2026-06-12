@@ -1,7 +1,16 @@
 
 
 const saveBtn=document.getElementById("savebtn")
-
+function removeContent(){
+    document.getElementById("task-name").value =""
+    document.getElementById("task-desc").value =""
+    document.getElementById("task-date").value =""
+    document.getElementById("task-tag").value =""
+    document.getElementById("task-subtask").value =""
+}
+//
+//================SAVE BUTTON=================
+//
 saveBtn.addEventListener("click",function(){
     const taskName=document.getElementById("task-name").value 
     const taskDesc=document.getElementById("task-desc").value
@@ -32,12 +41,11 @@ saveBtn.addEventListener("click",function(){
     alert("saved!")
 
     rendertask()
-    document.getElementById("task-name").value =""
-    document.getElementById("task-desc").value =""
-    document.getElementById("task-date").value =""
-    document.getElementById("task-tag").value =""
-    document.getElementById("task-subtask").value =""
+    removeContent()
 })
+//
+//================upDATE LIST================
+//
 //now render list 
 let selectedTaskID= null;
 function rendertask(){
@@ -77,15 +85,19 @@ function rendertask(){
     });
 }   
 rendertask()
+
+
+//
+//================MAIN BUTTON=================
+//
 const mainButton=document.getElementById("main-button")
 mainButton.addEventListener("click",function(){
-    document.getElementById("task-name").value =""
-    document.getElementById("task-desc").value =""
-    document.getElementById("task-date").value =""
-    document.getElementById("task-tag").value =""
-    document.getElementById("task-subtask").value =""
+    removeContent()
 
 });
+//
+//================DELETE BUTTON=================
+//
 const deleteButton=document.getElementById("deletebtn")
 deleteButton.addEventListener("click",function(){
     const stored=localStorage.getItem("tasks")
@@ -103,13 +115,14 @@ deleteButton.addEventListener("click",function(){
     //update in local storage:
     localStorage.setItem("tasks",JSON.stringify(tasks))
     alert("deleted succesfully")
-    document.getElementById("task-name").value =""
-    document.getElementById("task-desc").value =""
-    document.getElementById("task-date").value =""
-    document.getElementById("task-tag").value =""
-    document.getElementById("task-subtask").value =""
-rendertask()
+    removeContent()
+    rendertask()
 });
 
+//
+//================SUBTASK BUTTON=================
+//
+const subtaskBtn=document.getElementById("task-subtask")
+subtaskBtn.addEventListener("click",function(){
 
-
+});
