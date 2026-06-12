@@ -192,10 +192,30 @@ header p {
 
 
 }
+#task-list{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 10px;
+
+}
+#task-list li{
+    padding: 8px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #FAF8F5;
+}
+
+#task-list li:hover {
+    background-color: rgba(232, 165, 152, 0.12);
+    color: #D48A82;
+}
+
 
 .side-panel input[type="text"],
 .main button,.task-details input[type="text"],
-.form-row-inline input[type="date"]{
+.form-row-inline input[type="date"],#task-button{
     padding: 0px 10px;
     padding-top: 10px;
     border-radius: 5px;

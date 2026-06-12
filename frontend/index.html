@@ -57,9 +57,11 @@
             
             <section class="main">
                 <h2>Today</h2>
-                <button>+Add New Task</button>
+                <button id="main-button">+Add New Task</button>
                 <!--have to figure out how to store the data and show on frontend-->
+                <ol class="list" id="task-list">
 
+                </ol>
             </section>
             
 
@@ -92,6 +94,7 @@
                     <input type="text" placeholder="Add New Subtask" id="task-subtask">
                     <!---<input type="checkbox">-->
                 </div>
+                <button id="task-button">+Add New Subtask</button>
                 <div class="action-buttons">
                     <button class="save" id="savebtn">Save Changes</button>
                     <button class="delete" id="deletebtn">Delete task</button>
